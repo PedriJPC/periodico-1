@@ -3,127 +3,164 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Periodico Digital de WOW </title>
+    <title>AZEROTH MARCA - Diario de World of Warcraft</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body class="bg-light">
-   <header class="bg-dark text-white text-center py-4">
 
-   </header>
-   <div class="container"></div> 
-        <h1 class="fw-blod"> Nuevas noticias de World of Warcraft 
-        </h1>
-        <p class="lead m-0">Tu periódico de WOW favorito.</p>
-    </div>
-</header>
-<nav class="navbar navbar-expand-lg navbar-dark bg-secondary sticky-top">
-<div class="container">
-   <a class="navbar-brand" href="#">Inicio</a>
-    <button class="nvbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavegacion"></button> 
-<span class="navbar-toggler-icon"> </span>
-   </button>
-   <div class="collapse navbar-collapse" id="menuNavegacion">
-                <ul class="navbar-nav">
+    <!-- Cabecera roja estilo MARCA -->
+    <header class="bg-danger text-white text-center py-3 border-bottom border-dark border-3">
+        <div class="container">
+            <h1 class="display-4 fw-black text-uppercase m-0" style="letter-spacing: 2px;">MARCA AZEROTH</h1>
+            <p class="small text-uppercase m-0">El diario de los héroes de World of Warcraft</p>
+        </div>
+    </header>
+
+    <!-- Menú de navegación oscuro (5 secciones) -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-danger" href="#">PORTADA</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuMarca">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menuMarca">
+                <ul class="navbar-nav text-uppercase fw-bold small">
                     <li class="nav-item"><a class="nav-link active" href="#">Bandas</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">PvP</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Lore</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Guías</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Classic</a></li>
                 </ul>
-</div>
-</div>
-</nav>
-<main class="container my-4"></main>
-<div class="col-lg-8"></div>
-<section class="mb-4">
-<div class="card shadow-sm">
- <img src="images/wow.jpg" class="card-img-top img-fluid" alt="World of Warcraft">
- <div class="card-body">
-  <h2 class="card-title fw-blod">¡Hace nada ha salido WOW Forever!</h2>  
-  <p class="card-text text-muted"> El juego esperado por todos los fanes de WOW desde hace muchos años</p>
- <a href="#" class="btn btn-primary">Leer más</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Cuerpo de noticias -->
+    <main class="container my-4">
+        <div class="row">
+            
+            <!-- Columna izquierda: Noticias (8 columnas) -->
+            <div class="col-lg-8">
+                
+                <!-- Noticia Principal -->
+                <section class="mb-4">
+                    <div class="card border-0 shadow-sm">
+                        <img src="images/principal.jpg" class="card-img-top img-fluid" alt="Noticia principal">
+                        <div class="card-body">
+                            <span class="badge bg-danger text-uppercase mb-2">ÚLTIMA HORA • BANDAS</span>
+                            <h2 class="card-title fw-bold">¡Hazaña histórica! Una hermandad derrota al jefe final en modo Mítico tras 400 intentos</h2>
+                            <p class="card-text text-muted">La carrera por el primer puesto mundial llega a su fin tras un combate épico que ha mantenido en vilo a toda la comunidad de Azeroth.</p>
                         </div>
                     </div>
                 </section>
+
+                <!-- 6 Noticias Secundarias -->
                 <section>
-                    <h3 class="fw-bold mb-3 border-bottom pb-2">Otras noticias</h3>
+                    <h4 class="fw-bold text-uppercase border-bottom border-danger border-3 pb-1 mb-3">Más actualidad</h4>
                     <div class="row g-3">
+                        
+                        <!-- Noticia 1 -->
                         <div class="col-md-6">
-                            <div class="card h-100 shadow-sm">
+                            <div class="card h-100 border-0 shadow-sm">
                                 <img src="images/mago.jpg" class="card-img-top img-fluid" alt="Noticia 1">
                                 <div class="card-body">
-                                    <h5 class="card-title fw-bold">Ajustes de clases</h5>
-                                    <p class="card-text small text-muted">El parche semanal trae cambios de equilibrio importantes para cazadores y magos.</p>
+                                    <span class="text-danger fw-bold small text-uppercase">Parche Semanal</span>
+                                    <h5 class="card-title fw-bold mt-1">Blizzard aplica duros nerfeos a Magos y Cazadores</h5>
+                                    <p class="card-text small text-muted">Los cambios entran en vigor tras el mantenimiento de los servidores europeos.</p>
                                 </div>
                             </div>
                         </div>
+
+                        <!-- Noticia 2 -->
                         <div class="col-md-6">
-                            <div class="card h-100 shadow-sm">
+                            <div class="card h-100 border-0 shadow-sm">
                                 <img src="images/pvp.jpg" class="card-img-top img-fluid" alt="Noticia 2">
                                 <div class="card-body">
-                                    <h5 class="card-title fw-bold">Temporada de Arenas</h5>
-                                    <p class="card-text small text-muted">Arranca la nueva temporada PvP con recompensas exclusivas para gladiadores.</p>
-
- </div>
+                                    <span class="text-danger fw-bold small text-uppercase">Arenas PvP</span>
+                                    <h5 class="card-title fw-bold mt-1">Arranca la nueva temporada de Gladiadores con premios exclusivos</h5>
+                                    <p class="card-text small text-muted">Los mejores jugadores competirán por la nueva montura de temporada.</p>
+                                </div>
                             </div>
                         </div>
+
+                        <!-- Noticia 3 -->
                         <div class="col-md-6">
-                            <div class="card h-100 shadow-sm">
+                            <div class="card h-100 border-0 shadow-sm">
                                 <img src="images/draco.jpg" class="card-img-top img-fluid" alt="Noticia 3">
                                 <div class="card-body">
-                                    <h5 class="card-title fw-bold">Montura secreta</h5>
-                                    <p class="card-text small text-muted">Descubre la guía paso a paso para conseguir el nuevo draco oculto del mapa.</p>
+                                    <span class="text-danger fw-bold small text-uppercase">Coleccionismo</span>
+                                    <h5 class="card-title fw-bold mt-1">Descubren cómo conseguir la montura secreta del draco oculto</h5>
+                                    <p class="card-text small text-muted">Te explicamos paso a paso los acertijos necesarios para desbloquearla.</p>
                                 </div>
                             </div>
                         </div>
+
+                        <!-- Noticia 4 -->
                         <div class="col-md-6">
-                            <div class="card h-100 shadow-sm">
+                            <div class="card h-100 border-0 shadow-sm">
                                 <img src="images/cinematica.jpg" class="card-img-top img-fluid" alt="Noticia 4">
                                 <div class="card-body">
-                                    <h5 class="card-title fw-bold">Novedades de Lore</h5>
-                                    <p class="card-text small text-muted">Analizamos los secretos que ocultan las últimas cinemáticas del juego.</p>
-</div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="card h-100 shadow-sm">
-                                <img src="images/nuevos objetos.jpg" class="card-img-top img-fluid" alt="Noticia 5">
-                                <div class="card-body">
-                                    <h5 class="card-title fw-bold">Puesto Comercial</h5>
-                                    <p class="card-text small text-muted">Nuevos objetos cosméticos y transfiguraciones disponibles este mes.</p>
+                                    <span class="text-danger fw-bold small text-uppercase">Lore</span>
+                                    <h5 class="card-title fw-bold mt-1">La nueva cinemática revela el próximo gran villano de la saga</h5>
+                                    <p class="card-text small text-muted">Analizamos todas las pistas ocultas en el vídeo oficial de la campaña.</p>
                                 </div>
                             </div>
                         </div>
+
+                        <!-- Noticia 5 -->
                         <div class="col-md-6">
-                            <div class="card h-100 shadow-sm">
-                                <img src="images/nivel.jpg" class="card-img-top img-fluid" alt="Noticia 6">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <img src="images/nuevos objetos.jpg" class="card-img-top img-fluid" alt="Noticia 5">
                                 <div class="card-body">
-                                    <h5 class="card-title fw-bold">Guía Hardcore</h5>
-                                    <p class="card-text small text-muted">Consejos esenciales para subir de nivel en Forever sin perder tu personaje.</p>
- </div>
+                                    <span class="text-danger fw-bold small text-uppercase">Puesto Comercial</span>
+                                    <h5 class="card-title fw-bold mt-1">Vuelven las transfiguraciones más buscadas por los jugadores</h5>
+                                    <p class="card-text small text-muted">Consulta el catálogo completo disponible durante todo este mes.</p>
+                                </div>
                             </div>
                         </div>
+
+                        <!-- Noticia 6 -->
+                        <div class="col-md-6">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <img src="images/nivel.jpg" class="card-img-top img-fluid" alt="Noticia 6">
+                                <div class="card-body">
+                                    <span class="text-danger fw-bold small text-uppercase">WoW Forever</span>
+                                    <h5 class="card-title fw-bold mt-1">Guía definitiva para llegar a nivel 60 lo antes posible</h5>
+                                    <p class="card-text small text-muted">Las zonas más peligrosas que debes evitar si quieres llegar al nivel 60.</p>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </section>
             </div>
+
+            <!-- Barra lateral derecha (4 columnas) -->
             <aside class="col-lg-4 mt-4 mt-lg-0">
-                <div class="card shadow-sm">
-                    <div class="card-header bg-dark text-white fw-bold">Lo más leído</div>
+                <div class="card border-0 shadow-sm">
+                    <div class="card-header bg-danger text-white fw-bold text-uppercase">
+                        Lo más leído en Azeroth
+                    </div>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item">1. Tier list de tanques para Míticas+</li>
-                        <li class="list-group-item">2. Dónde farmear oro de forma rápida</li>
-                        <li class="list-group-item">3. Fechas de la próxima expansión</li>
-                        <li class="list-group-item">4. Mejores addons obligatorios</li>
+                        <li class="list-group-item"><span class="text-danger fw-bold me-2">1.</span>Tier list de mejores clases para Míticas+</li>
+                        <li class="list-group-item"><span class="text-danger fw-bold me-2">2.</span>Los 5 mejores métodos para farmear oro</li>
+                        <li class="list-group-item"><span class="text-danger fw-bold me-2">3.</span>Calendario oficial de eventos del mes</li>
+                        <li class="list-group-item"><span class="text-danger fw-bold me-2">4.</span>Addons imprescindibles para principiantes</li>
                     </ul>
-</div>
+                </div>
             </aside>
+
         </div>
     </main>
-    <footer class="bg-dark text-white text-center py-3 mt-4">
+
+    <!-- Pie de página -->
+    <footer class="bg-dark text-white text-center py-4 mt-4 border-top border-danger border-3">
         <div class="container">
-            <p class="m-0"> 2026 WoWW News | Autor: Pedro Jorge</p>
+            <p class="fw-bold text-uppercase m-0">MARCA AZEROTH</p>
+            <p class="small text-muted m-0">&copy; 2026 | Autor: PedriJPC</p>
         </div>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
