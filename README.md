@@ -1,6 +1,5 @@
 # Azeroth News - Periódico Digital
 
-## De# Azeroth News - Periódico Digital
 
 ## Descripción de la temática
 Este proyecto es una página web de noticias inspirada en la estructura y maquetación del diario **MARCA**, enfocada íntegramente en la actualidad y el universo de **World of Warcraft**. 
